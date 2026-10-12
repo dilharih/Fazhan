@@ -1,0 +1,77 @@
+:root {
+  font-family: "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  color: #ede8dc;
+  background: #0b0d0f;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --ink: #ede8dc;
+  --ink-soft: #c7c3ba;
+  --muted: #8a929b;
+  --paper: #0b0d0f;
+  --paper-deep: #111416;
+  --line: #292c2f;
+  --forest: #d9663d;
+  --forest-deep: #171311;
+  --sage: #d9663d;
+  --lime: #f0a077;
+  --serif: "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", "Cascadia Code", Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+body,
+button,
+a {
+  font-family: "Inter", "Avenir Next", Avenir, "Segoe UI", sans-serif;
+}
+
+button,
+a {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--forest);
+}
+
+:focus-visible {
+  outline: 3px solid #d9663d;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
